@@ -6,7 +6,8 @@ jobs:
       - checkout
       - run:
           name: Installing AWS CLI
-          command: 
+          command: |
+            sudo rm -rf /var/lib/apt/lists/*
             sudo apt-get --allow update
             sudo apt install python3-pip
             sudo pip3 install awsebcli --upgrade
