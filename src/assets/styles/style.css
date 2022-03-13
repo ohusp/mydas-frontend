@@ -15,3 +15,8 @@
 .home-title-text {
 	background-color: rgba(0, 0, 0, 0.301);
 }
+
+.logo {
+	height: 70px;
+	width: auto;
+}

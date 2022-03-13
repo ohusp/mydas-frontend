@@ -1,12 +1,12 @@
 import Title from 'components/landing/Title';
 import ContactCard from 'components/landing/ContactCard';
-import Form from 'components/landing/Form';
+import ContactForm from 'components/landing/ContactForm';
 
 export default function ContactSection() {
     return (
         <section className="pb-20 relative block bg-gray-100">
             <div className="container max-w-7xl mx-auto px-4 lg:pt-24">
-                <Title heading="Build something">
+                {/* <Title heading="Build something">
                     Put the potentially record low maximum sea ice extent tihs
                     year down to low ice. According to the National Oceanic and
                     Atmospheric Administration, Ted, Scambos.
@@ -25,9 +25,9 @@ export default function ContactSection() {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                     </ContactCard>
-                </div>
+                </div> */}
 
-                <Form />
+                <ContactForm />
             </div>
         </section>
     );

@@ -7,7 +7,9 @@ import H6 from '@material-tailwind/react/Heading6';
 import LeadText from '@material-tailwind/react/LeadText';
 import Paragraph from '@material-tailwind/react/Paragraph';
 import StatusCard from 'components/landing/StatusCard';
-import Teamwork from 'assets/img/teamwork.jpeg';
+import Img4 from 'assets/img/img4.jpg';
+import Img2 from 'assets/img/img2.jpg';
+import Img3 from 'assets/img/img3.jpg';
 
 export default function ProgrammesComp() {
     return (
@@ -26,7 +28,7 @@ export default function ProgrammesComp() {
                     <div className="flex flex-wrap relative z-50">
                         <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">
                             <Card>
-                                <CardImage alt="Card Image" src={Teamwork} />
+                                <CardImage alt="Card Image" src={Img4} />
                                 <CardBody>
                                     <H6 color="gray">A-Level Private Tuition</H6>
                                     <Paragraph color="blueGray">
@@ -39,7 +41,7 @@ export default function ProgrammesComp() {
 
                         <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">
                             <Card>
-                                <CardImage alt="Card Image" src={Teamwork} />
+                                <CardImage alt="Card Image" src={Img2} />
                                 <CardBody>
                                     <H6 color="gray">Afterschool</H6>
                                     <Paragraph color="blueGray">
@@ -51,7 +53,7 @@ export default function ProgrammesComp() {
 
                         <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">
                             <Card>
-                                <CardImage alt="Card Image" src={Teamwork} />
+                                <CardImage alt="Card Image" src={Img3} />
                                 <CardBody>
                                     <H6 color="gray">Afterschool Club</H6>
                                     <Paragraph color="blueGray">

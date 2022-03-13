@@ -5,6 +5,7 @@ import Programmes from 'pages/Programmes';
 import Profile from 'pages/Profile';
 import Login from 'pages/Login';
 import Register from 'pages/Register';
+import Contact from 'pages/Contact';
 
 // Font Awesome Style Sheet
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
+            <Route exact path="/contact" component={Contact} />
             <Redirect from="*" to="/" />
         </Switch>
     );

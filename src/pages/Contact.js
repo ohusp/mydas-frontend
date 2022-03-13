@@ -12,10 +12,7 @@ export default function Landing() {
                 <DefaultNavbar />
             </div>
             <main>
-                <Header />
-                <WorkingSection />
-                <TeamSection />
-                {/* <ContactSection /> */}
+                <ContactSection />
             </main>
             <DefaultFooter />
         </>

@@ -7,22 +7,27 @@ import H6 from '@material-tailwind/react/Heading6';
 import LeadText from '@material-tailwind/react/LeadText';
 import Paragraph from '@material-tailwind/react/Paragraph';
 import StatusCard from 'components/landing/StatusCard';
-import Teamwork from 'assets/img/teamwork.jpeg';
+import Img1 from 'assets/img/img1.jpg';
+import Img2 from 'assets/img/img2.jpg';
+import Img3 from 'assets/img/img3.jpg';
 
 export default function WhoWeAreComp() {
     return (
         <section className="pb-20 bg-gray-100 -mt-32">
             <div className="container max-w-7xl mx-auto px-4">
                 
-
                 <div className="flex flex-wrap items-center mt-32">
-                    <div className="w-full md:w-7/12 px-4 mx-auto">
+                    {/* <div className="w-full md:w-4/12 px-4 mx-auto mt-16">
                         <div className="text-blue-gray-800 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                             <Icon name="people" size="3xl" />
                         </div>
-                        <H4 color="gray">Mydas Tutors is a community-based afterschool private tuition and digital skills training provider.</H4>
+                    </div> */}
+                    <div className="w-full md:w-12/12 px-4 mx-auto mt-16">
+                        <H4 color="gray">Mydas Tutors is a community-based after school private tuition and digital skills training provider.</H4>
                     </div>
+                </div>
 
+                <div className="flex flex-wrap items-center mt-16">
                     <div className="w-full md:w-6/12 px-4 mx-auto">
                         {/* <div className="text-blue-gray-800 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                             <Icon name="people" size="3xl" />
@@ -47,9 +52,9 @@ export default function WhoWeAreComp() {
 
                     <div className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">
                         <Card>
-                            <CardImage alt="Card Image" src={Teamwork} />
-                            <CardImage alt="Card Image" src={Teamwork} />
-                            <CardImage alt="Card Image" src={Teamwork} />
+                            <CardImage alt="Card Image" src={Img1} />
+                            <CardImage alt="Card Image" src={Img2} />
+                            <CardImage alt="Card Image" src={Img3} />
                         </Card>
                     </div>
                 </div>

@@ -12,6 +12,7 @@ import Dropdown from '@material-tailwind/react/Dropdown';
 import DropdownItem from '@material-tailwind/react/DropdownItem';
 import Icon from '@material-tailwind/react/Icon';
 import Button from '@material-tailwind/react/Button';
+import Logo from 'assets/img/logo.png';
 
 export default function DefaultNavbar() {
     const [openNavbar, setOpenNavbar] = useState(false);
@@ -20,13 +21,15 @@ export default function DefaultNavbar() {
         <Navbar color="transparent" navbar className="nav-background">
             <NavbarContainer>
                 <NavbarWrapper>
-                    <a
-                        href="https://material-tailwind.com?ref=mtk"
-                        target="_blank"
+                    <Link
+                        to="/"
                         rel="noreferrer"
                     >
-                        <NavbarBrand>MYDAS Tutors</NavbarBrand>
-                    </a>
+                        {/* <NavbarBrand> */}
+                            {/* MYDAS Tutors */}
+                            <img className="logo" src={Logo} alt="logo" />
+                        {/* </NavbarBrand> */}
+                    </Link>
                     <NavbarToggler
                         onClick={() => setOpenNavbar(!openNavbar)}
                         color="white"
@@ -73,6 +76,18 @@ export default function DefaultNavbar() {
                                 &nbsp;Programmes
                             </Link>
                             <Link 
+                                to="/contact"
+                                style={{color: "#fff"}}
+                                className="false false px-5 py-4 flex gap-1 items-center text-xs uppercase font-medium leading text-white rounded-lg"
+                            >
+                                <Icon 
+                                    name="description" 
+                                    size="2xl" 
+                                    className="material-icons undefined text-2xl leading-none"
+                                />
+                                &nbsp;Contact
+                            </Link>
+                            <Link 
                                 to="/"
                                 style={{color: "#fff"}}
                                 className="false false px-5 py-4 flex gap-1 items-center text-xs uppercase font-medium leading text-white rounded-lg"
@@ -84,19 +99,37 @@ export default function DefaultNavbar() {
                                 />
                                 &nbsp;Enrol Now
                             </Link>
-                            <Link 
-                                to="/"
-                                style={{color: "#fff"}}
-                                className="false false px-5 py-4 flex gap-1 items-center text-xs uppercase font-medium leading text-white rounded-lg"
+                            <Dropdown
+                                style={{color: "#ffffff"}}
+                                color="transparent"
+                                size="sm"
+                                buttonType="link"
+                                buttonText={
+                                    <div className="py-2.5 font-medium flex items-center">
+                                        <Icon
+                                            name="view_carousel"
+                                            size="2xl"
+                                            color="white"
+                                        />
+                                        <span className="ml-2">
+                                            Login
+                                        </span>
+                                    </div>
+                                }
+                                ripple="light"
                             >
-                                <Icon 
-                                    name="description" 
-                                    size="2xl" 
-                                    className="material-icons undefined text-2xl leading-none"
-                                />
-                                &nbsp;Schools/Colleges Log in
-                            </Link>
-                            <Link 
+                                <a href="https://mydas-dashboard.brickpine.com/student_signin">
+                                    <DropdownItem color="lightBlue">
+                                        Student Log in
+                                    </DropdownItem>
+                                </a>
+                                <a href="https://mydas-dashboard.brickpine.com/user_signin">
+                                    <DropdownItem color="lightBlue">
+                                        User/Parent Log in
+                                    </DropdownItem>
+                                </a>
+                            </Dropdown>
+                            {/* <Link 
                                 to="/"
                                 style={{color: "#fff"}}
                                 className="false false px-5 py-4 flex gap-1 items-center text-xs uppercase font-medium leading text-white rounded-lg"
@@ -107,7 +140,7 @@ export default function DefaultNavbar() {
                                     className="material-icons undefined text-2xl leading-none"
                                 />
                                 &nbsp;Legal Terms
-                            </Link>
+                            </Link> */}
 
 
 
