@@ -1,16 +1,10 @@
+version: 2.1
 jobs:
   build_deploy:
-    machine:
-      image: ubuntu-2004:current
+    docker:
+      - image: cimg/node:17.2.0
     steps:
       - checkout
-      - run:
-          name: Installing AWS CLI
-          command: |
-            sudo rm -rf /var/lib/apt/lists/*
-            sudo apt-get --allow update
-            sudo apt install python3-pip
-            sudo pip3 install awsebcli --upgrade
       - run: npm install && npm run build
       - run: aws s3 sync build s3://circleci-mydas-test
 
